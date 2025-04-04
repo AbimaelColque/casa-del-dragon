@@ -3,7 +3,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    
+    box-sizing: border-box;
 }
 /*nav*/
 header{
@@ -26,7 +26,6 @@ ul.nav li{
 /*contenido-1*/
 .contenido-1 h2{
     text-align: center;
-    width: 50vh;
     margin: auto;
 }
 
@@ -43,7 +42,6 @@ ul.nav li{
 /*contenido-2*/
 .contenido-2 h2{
     text-align: center;
-    width: 50vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -67,4 +65,37 @@ ul.nav li{
 }
 .sub-contenido-2-servicio img{
     width: 25vh;
+}
+/*footer*/
+footer{
+    background-color: #252525;
+    color: white;
+}
+footer h2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+.form{
+    text-align: center;
+}
+.footer-secciones{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-seccion-1, .footer-seccion-2{
+    width: 25vh;
+    text-align: justify;
+    padding: 20px;
+}
+.iconos{
+    width: 50vh;
+    text-align: center;
+}
+.iconos i{
+    font-size: 30px;
+    padding: 20px;
 }
