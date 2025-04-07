@@ -1,3 +1,4 @@
+/*global*/
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +6,32 @@
     list-style: none;
     box-sizing: border-box;
 }
+a{
+    color: #c51a1a;
+}
+h2, h3{
+    color: #c51a1a;
+}
+button{
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #c51a1a;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+button:hover{
+    background-color: #252525;
+    transition: background-color .5s;
+}
+input{
+    padding: 12px;
+    border-radius: 10px;
+}
 /*nav*/
 header{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -15,29 +40,51 @@ header{
 header img{
     width: 10vh;
 }
-ul.nav{
+header ul.nav{
     display: flex;
-    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-ul.nav li{
+header ul.nav li{
     padding: 10px;
-    border-radius: 20%;
+    border-radius: 15px;
+    background-color: white;
+    transition: background-color .5s;
+}
+header section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .nav li:hover{
+    border-radius: 15px;
+    background-color: #252525;
+    transition: background-color .5s;
+}
+header .nav li a:hover{
+    color: white;
 }
 /*contenido-1*/
 .contenido-1 h2{
     text-align: center;
-    margin: auto;
 }
-
 .sub-contenido-1-servicio{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 30px;
+    width: 100%;
 }
-.sub-contenido-1-servicio section, img{
+.sub-contenido-1-servicio section{
     width: 50vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+.sub-contenido-1-servicio section img{
+    width: 100%;
 }
 /*contenido-2*/
 .contenido-2 h2{
@@ -63,8 +110,12 @@ ul.nav li{
     gap: 30px;
     
 }
-.sub-contenido-2-servicio img{
+.sub-contenido-2-servicio{
     width: 25vh;
+    text-align: center;
+}
+.sub-contenido-2-servicio img{
+    width: 90%;
 }
 /*footer*/
 footer{
@@ -77,8 +128,28 @@ footer h2{
     margin-right: auto;
     padding: 25px;
 }
-.form{
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.formulario section{
+    color: #c51a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.formulario section textarea{
+    border-radius: 10px;
+    text-align: justify;
+    width: 180px;
+    height: 100px;
+    max-width: 200px;
+    max-height: 200px;
 }
 .footer-secciones{
     display: flex;
@@ -94,6 +165,9 @@ footer h2{
 .iconos{
     width: 50vh;
     text-align: center;
+}
+.iconos h3{
+    margin-bottom: 30px;
 }
 .iconos i{
     font-size: 30px;
