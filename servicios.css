@@ -71,20 +71,46 @@ header .nav li a:hover{
 .sub-contenido-1-servicio{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 30px;
     width: 100%;
 }
 .sub-contenido-1-servicio section{
     width: 50vh;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
     text-align: justify;
 }
 
 .sub-contenido-1-servicio section img{
     width: 100%;
+    border-radius: 15px;
+}
+.img-hover{
+    position: relative;
+}
+.contenido-hover{
+    opacity: 0;
+    transition: opacity .5s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 15px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(197, 26, 26, .5);
+}
+.contenido-hover:hover{
+    opacity: 1;
+    transition: opacity .5s;
 }
 /*contenido-2*/
 .contenido-2 h2{
@@ -116,6 +142,42 @@ header .nav li a:hover{
 }
 .sub-contenido-2-servicio img{
     width: 90%;
+}
+.modal{
+    opacity: 0;
+    transition: opacity .5s;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: rgb(37, 37, 37, .5);
+}
+.modal-contenido{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: white;
+}
+.modal-contenido img{
+    width: 90%;
+
+}
+.modal-contenido button{
+    width: 50%;
+}
+.mostrar-modal{
+    opacity: 1;
+    transition: opacity .5s;
+    pointer-events: unset;
 }
 /*footer*/
 footer{
