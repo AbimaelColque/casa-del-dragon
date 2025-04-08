@@ -71,3 +71,33 @@ btn_cerrar_modal_6.addEventListener('click',()=>{
 })
 
 /*Formulario */
+const formulario = document.getElementById('formulario');
+formulario.addEventListener('submit',function(event){
+    event.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const correo = document.getElementById('correo').value;
+    const mensaje = document.getElementById('mensaje').value;
+
+    const confirmacion = `
+        <h3>Datos enviados correctamente</h3>
+        <ul>
+            <li>Nombre: ${nombre}</li>
+            <li>Correo: ${correo}</li>
+            <li>Mensaje: ${mensaje}</li>
+        </ul>
+    `;
+
+    const formulario_datos = document.getElementById('formulario-datos');
+    formulario_datos.innerHTML = confirmacion;
+
+    const modal_formulario = document.getElementById('modal-formulario');
+    modal_formulario.classList.add('mostrar-modal');
+
+    const btn_cerrar_formulario = document.getElementById('btn-cerrar-formulario');
+    btn_cerrar_formulario.addEventListener('click',()=>{
+        modal_formulario.classList.remove('mostrar-modal');
+    })
+    this.reset();
+})
+
+

@@ -163,6 +163,7 @@ header .nav li a:hover{
     align-items: center;
     width: 50%;
     max-width: 300px;
+    min-width: 250px;
     margin: auto;
     border-radius: 15px;
     background-color: white;
@@ -179,6 +180,12 @@ header .nav li a:hover{
     transition: opacity .5s;
     pointer-events: unset;
 }
+.formulario-datos{
+    color: black;
+    text-align: justify;
+}
+
+
 /*footer*/
 footer{
     background-color: #252525;

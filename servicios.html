@@ -209,21 +209,33 @@
     <footer>
         <h2>Titulo</h2>
         <div>
-            <form action="" class="formulario">
+            <form action="" class="formulario" id="formulario">
                 <section>
                     <label for="">Nombre:</label>
-                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Nombre" id="nombre" required>
                 </section>
                 <section>
                     <label for="">Correo:</label>
-                    <input type="email" placeholder="Correo Elelectronico">
+                    <input type="email" placeholder="Correo Elelectronico" id="correo" required>
                 </section>
                 <section>
                     <label for="">Mensaje:</label>
-                    <textarea name="" id="" placeholder="Mensaje"></textarea>
+                    <textarea name="" id="mensaje" placeholder="Mensaje" required></textarea>
                 </section>
-            <button>Enviar</button>
+                <button id="btn-formulario" type="submit">Enviar</button>
             </form>
+            <div class="modal" id="modal-formulario">
+                <div class="modal-contenido">
+                    <section>
+                        <img src="img/escudo.jpg" alt="">
+                    </section>
+                    <section id="formulario-datos" class="formulario-datos">
+                        
+                        
+                    </section>
+                    <button id="btn-cerrar-formulario">Cerrar</button>
+                </div>
+            </div>
         </div>
         <div class="footer-secciones">
             <section class="footer-seccion-1">
