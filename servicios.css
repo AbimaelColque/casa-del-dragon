@@ -58,13 +58,22 @@ header section{
 }
 header .nav li:hover{
     border-radius: 15px;
-    background-color: #252525;
+    color: white;
+    background-color: #c51a1a;
     transition: background-color .5s;
 }
 header .nav li a:hover{
     color: white;
 }
 /*contenido-1*/
+.contenido-1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Overlay oscuro */
+        url('img/fond.png') center/cover no-repeat;
+    color: white;
+}
 .contenido-1 h2{
     text-align: center;
 }
@@ -129,19 +138,32 @@ header .nav li a:hover{
     flex-wrap: wrap;
     gap: 50px;
 }
+.contenido-2-nav ul li{
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background 0.5s;
+}
+.contenido-2-nav ul li:hover{
+    transition: all 0.5s;
+    color: white;
+    background-color: #c51a1a;
+}
 .sub-contenido-2{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    
+    justify-content: space-evenly;
 }
 .sub-contenido-2-servicio{
-    width: 25vh;
+    border-radius: 20px;
+    margin: 20px;
+    width: 30vh;
     text-align: center;
+    background: linear-gradient(0deg, rgba(0,0,1,0.9345939059217437) 0%, rgba(68,33,27,1) 59%, rgba(153,42,42,1) 100%);
 }
 .sub-contenido-2-servicio img{
-    width: 90%;
+    width: 100%;
+    border-radius: 20px;
 }
 .modal{
     opacity: 0;
@@ -180,15 +202,13 @@ header .nav li a:hover{
     transition: opacity .5s;
     pointer-events: unset;
 }
-.formulario-datos{
+.formulario-datos ul{
     color: black;
     text-align: justify;
 }
-
-
 /*footer*/
 footer{
-    background-color: #252525;
+    background: linear-gradient(180deg, rgba(0,0,1,0.9345939059217437) 0%, rgba(68,33,27,1) 59%, rgba(153,42,42,1) 100%);
     color: white;
 }
 footer h2{
@@ -206,6 +226,7 @@ footer h2{
     gap: 30px;
 }
 .formulario section{
+    width: 50vh;
     color: #c51a1a;
     display: flex;
     justify-content: center;
@@ -220,19 +241,22 @@ footer h2{
     max-width: 200px;
     max-height: 200px;
 }
+.formulario section button{
+    width: 50%;
+}
 .footer-secciones{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .footer-seccion-1, .footer-seccion-2{
-    width: 25vh;
+    width: 30vh;
     text-align: justify;
     padding: 20px;
 }
 .iconos{
-    width: 50vh;
+    width: 40vh;
     text-align: center;
 }
 .iconos h3{
