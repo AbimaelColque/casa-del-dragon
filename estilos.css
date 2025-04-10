@@ -71,7 +71,7 @@ header .nav li a:hover{
     padding-bottom: 30px;
     background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Overlay oscuro */
-        url('img/fond.png') center/cover no-repeat;
+        url('img/fondo.webp') center/cover no-repeat;
     color: white;
 }
 .contenido-1 h2{
